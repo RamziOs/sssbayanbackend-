@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/attendences-sheets",
+      "handler": "attendences-sheet.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/attendences-sheets/count",
+      "handler": "attendences-sheet.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/attendences-sheets/:id",
+      "handler": "attendences-sheet.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/attendences-sheets",
+      "handler": "attendences-sheet.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/attendences-sheets/:id",
+      "handler": "attendences-sheet.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/attendences-sheets/:id",
+      "handler": "attendences-sheet.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

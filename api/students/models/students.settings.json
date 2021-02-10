@@ -1,0 +1,70 @@
+{
+  "kind": "collectionType",
+  "collectionName": "students",
+  "info": {
+    "name": "students",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "student_name": {
+      "type": "string"
+    },
+    "student_id": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
+    "student_email": {
+      "type": "email",
+      "required": true,
+      "unique": true
+    },
+    "student_password": {
+      "type": "password",
+      "required": true
+    },
+    "student_division": {
+      "type": "enumeration",
+      "enum": [
+        "ComputerScience",
+        "InformationSystems",
+        "InformationTechnology",
+        "CommunicationsEngineering",
+        "EquipmentEngineering"
+      ]
+    },
+    "acadimic_year": {
+      "type": "enumeration",
+      "enum": [
+        "First",
+        "Second",
+        "Third",
+        "Fourth",
+        "Fifth"
+      ]
+    },
+    "student_image": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images"
+      ],
+      "plugin": "upload",
+      "required": false
+    },
+    "student_phone_number": {
+      "type": "string"
+    },
+    "student_address": {
+      "type": "string"
+    },
+    "student_family_name": {
+      "type": "string"
+    }
+  }
+}

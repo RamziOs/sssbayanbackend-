@@ -1,0 +1,28 @@
+{
+  "kind": "collectionType",
+  "collectionName": "Subjects",
+  "info": {
+    "name": "Subjects",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "subject_name": {
+      "type": "string",
+      "required": false
+    },
+    "teacher": {
+      "model": "teachers",
+      "via": "subjects"
+    },
+    "users": {
+      "plugin": "users-permissions",
+      "collection": "user",
+      "via": "subjects"
+    }
+  }
+}

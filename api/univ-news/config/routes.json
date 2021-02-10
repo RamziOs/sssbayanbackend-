@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/univ-news",
+      "handler": "univ-news.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/univ-news/count",
+      "handler": "univ-news.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/univ-news/:id",
+      "handler": "univ-news.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/univ-news",
+      "handler": "univ-news.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/univ-news/:id",
+      "handler": "univ-news.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/univ-news/:id",
+      "handler": "univ-news.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

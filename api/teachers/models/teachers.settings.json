@@ -1,0 +1,55 @@
+{
+  "kind": "collectionType",
+  "collectionName": "Teachers",
+  "info": {
+    "name": "Teachers"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "teacher_name": {
+      "type": "string"
+    },
+    "teacher_id": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
+    "teacher_email": {
+      "type": "email",
+      "required": true,
+      "unique": true
+    },
+    "teacher_password": {
+      "type": "password",
+      "required": true
+    },
+    "teacher_image": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images"
+      ],
+      "plugin": "upload",
+      "required": false
+    },
+    "teacher_phone_number": {
+      "type": "string"
+    },
+    "teacher_address": {
+      "type": "string"
+    },
+    "subjects": {
+      "via": "teacher",
+      "collection": "subjects"
+    },
+    "users": {
+      "via": "teachers",
+      "plugin": "users-permissions",
+      "collection": "user"
+    }
+  }
+}

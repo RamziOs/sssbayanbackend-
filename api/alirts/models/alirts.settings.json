@@ -1,0 +1,37 @@
+{
+  "kind": "collectionType",
+  "collectionName": "Alirts",
+  "info": {
+    "name": "Alirts",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "alirt": {
+      "type": "text",
+      "required": true
+    },
+    "alirt_date": {
+      "type": "date",
+      "required": true
+    },
+    "alirt_time": {
+      "type": "time",
+      "required": true
+    },
+    "acadimec_year": {
+      "type": "enumeration",
+      "enum": [
+        "First",
+        "Second",
+        "Third",
+        "Fourth",
+        "Fifth"
+      ]
+    }
+  }
+}

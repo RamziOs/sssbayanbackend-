@@ -1,0 +1,23 @@
+{
+  "kind": "collectionType",
+  "collectionName": "calenders",
+  "info": {
+    "name": "calender"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "calender_image": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images"
+      ],
+      "plugin": "upload",
+      "required": true
+    }
+  }
+}

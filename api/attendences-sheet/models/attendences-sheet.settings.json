@@ -1,0 +1,38 @@
+{
+  "kind": "collectionType",
+  "collectionName": "attendences_sheets",
+  "info": {
+    "name": "attendences_sheet",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "attendences_name": {
+      "type": "string"
+    },
+    "divison": {
+      "type": "enumeration",
+      "enum": [
+        "ComputerScience",
+        "InformationSystems",
+        "InformationTechnology",
+        "CommunicationsEngineering",
+        "EquipmentEngineering"
+      ]
+    },
+    "acadimec_year": {
+      "type": "enumeration",
+      "enum": [
+        "First",
+        "Second",
+        "Third",
+        "Fourth",
+        "Fifth"
+      ]
+    }
+  }
+}

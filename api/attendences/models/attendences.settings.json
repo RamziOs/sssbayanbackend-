@@ -1,0 +1,51 @@
+{
+  "kind": "collectionType",
+  "collectionName": "attendences",
+  "info": {
+    "name": "attendences",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "acadimec_year": {
+      "type": "enumeration",
+      "enum": [
+        "First",
+        "Second",
+        "Third",
+        "Fourth",
+        "Fifth"
+      ]
+    },
+    "Attendences_state": {
+      "type": "boolean",
+      "required": false
+    },
+    "attendences_name": {
+      "type": "string"
+    },
+    "Studen_name": {
+      "type": "string"
+    },
+    "Student_Family_Name": {
+      "type": "string"
+    },
+    "Student_Id": {
+      "type": "string"
+    },
+    "divison": {
+      "type": "enumeration",
+      "enum": [
+        "ComputerScience",
+        "InformationSystems",
+        "InformationTechnology",
+        "CommunicationsEngineering",
+        "EquipmentEngineering"
+      ]
+    }
+  }
+}
